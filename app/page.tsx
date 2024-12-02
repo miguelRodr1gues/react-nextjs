@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function page() {
   return <>
-      <h1>Olá, mundo!</h1>
-      <p>Este é um componente funcional em React.</p>
+      <h1>Bem vindo👋</h1>
+      <p>Este é o meu primeiro site feito em React.</p>
   </>
 }
