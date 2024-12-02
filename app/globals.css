@@ -11,7 +11,7 @@ body {
   align-items: center;
 
   /* Fundo e Estética */
-  background: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png');
+  background: url('https://cdn.pixabay.com/photo/2018/12/18/08/44/nature-3881939_1280.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -21,10 +21,10 @@ main {
   /* Reset e Box Model */
   width: 320px;
   height: 450px;
-  padding: 20px;
+  padding: 10px 30px;
   border-radius: 20px;
   overflow-y: auto;
 
   /* Fundo */
-  background: whitesmoke;
+  background: rgba(215, 240, 255, 0.7);
 }
