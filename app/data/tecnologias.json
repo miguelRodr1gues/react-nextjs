@@ -1,0 +1,74 @@
+[
+    {
+      "title": "HTML",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+      "description": "Uma linguagem de marcação usada para estruturar o conteúdo na web.",
+      "rating": 4.8
+    },
+    {
+      "title": "CSS",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+      "description": "Usada para estilizar e definir o layout das páginas web.",
+      "rating": 4.5
+    },
+    {
+      "title": "JavaScript",
+      "image": "https://commons.wikimedia.org/wiki/File:JavaScript-logo.png",
+      "description": "Linguagem de programação usada para adicionar interatividade às páginas web.",
+      "rating": 4.9
+    },
+    {
+      "title": "JSON",
+      "image": "https://commons.wikimedia.org/wiki/File:JSON_vector_logo.svg",
+      "description": "Formato de troca de dados leve e amplamente utilizado na web.",
+      "rating": 4.7
+    },
+    {
+      "title": "API RESTful",
+      "image": "https://commons.wikimedia.org/wiki/File:Representational_State_Transfer_(REST)_Logo.svg",
+      "description": "Um estilo arquitetônico para criação de APIs escaláveis.",
+      "rating": 4.9
+    },
+    {
+      "title": "Swagger",
+      "image": "https://commons.wikimedia.org/wiki/File:Swagger-logo.png",
+      "description": "Ferramenta para design e documentação de APIs RESTful.",
+      "rating": 4.4
+    },
+    {
+      "title": "GitHub",
+      "image": "https://commons.wikimedia.org/wiki/File:Octicons-mark-github.svg",
+      "description": "Plataforma para hospedagem de código e controle de versão.",
+      "rating": 4.9
+    },
+    {
+      "title": "Codespaces",
+      "image": "https://commons.wikimedia.org/wiki/File:Visual_Studio_Codespaces_Logo.svg",
+      "description": "Ambiente de desenvolvimento baseado na nuvem fornecido pelo GitHub.",
+      "rating": 4.6
+    },
+    {
+      "title": "GitHub Pages",
+      "image": "https://commons.wikimedia.org/wiki/File:GitHub_Pages_logo.png",
+      "description": "Serviço de hospedagem de sites estáticos diretamente do GitHub.",
+      "rating": 4.3
+    },
+    {
+      "title": "React.js",
+      "image": "https://commons.wikimedia.org/wiki/File:React-icon.svg",
+      "description": "Biblioteca JavaScript para construção de interfaces de usuário.",
+      "rating": 4.9
+    },
+    {
+      "title": "Next.js",
+      "image": "https://commons.wikimedia.org/wiki/File:Nextjs-logo.svg",
+      "description": "Framework para aplicações React com renderização no servidor e geração estática.",
+      "rating": 4.8
+    },
+    {
+      "title": "Vercel",
+      "image": "https://commons.wikimedia.org/wiki/File:Vercel_logo.svg",
+      "description": "Plataforma para hospedagem de sites modernos e aplicações web.",
+      "rating": 4.8
+    }
+  ]

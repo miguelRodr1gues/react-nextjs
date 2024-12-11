@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Card.module.css';
+import { Tecnologias } from '@/app/models/interfaces'; 
 
-const Card = ({ title, image, description, rating }) => {
+export default function Card({ title, image, description, rating } : Tecnologias) {
   return (
     <div className={styles.card}>
       <img src={image} alt={title} className={styles.image} />
@@ -16,6 +17,5 @@ const Card = ({ title, image, description, rating }) => {
       </div>
     </div>
   );
-};
+}
 
-export default Card;
