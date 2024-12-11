@@ -2,7 +2,7 @@ body {
   /* Box Model */
   margin: 0;
   padding: 0;
-
+  height: 100vh;
 
   /* Layout e Posicionamento */
   display: flex;
@@ -15,5 +15,17 @@ body {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
+}
+
+main {
+  /* Reset e Box Model */
+  width: 320px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 20px;
+  overflow-y: auto;
+
+  /* Fundo */
+  background: whitesmoke;
 }
 
