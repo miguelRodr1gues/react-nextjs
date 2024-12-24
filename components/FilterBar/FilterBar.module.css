@@ -1,0 +1,55 @@
+.barra {
+
+    display: flex;
+    background-color: white;
+    margin: 20px 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.barra p {
+
+    font-size: 20px;
+}
+
+#filtrar {
+
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #452b1a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 40px 20px 5px;
+}
+
+#ordenar {
+
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #452b1a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 40px 20px 5px;
+}
+
+#pesquisar {
+
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #452b1a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 40px 20px 5px;
+}

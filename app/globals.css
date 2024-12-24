@@ -24,6 +24,7 @@ main {
   padding: 20px;
   border-radius: 20px;
   overflow-y: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   /* Fundo */
   background: whitesmoke;

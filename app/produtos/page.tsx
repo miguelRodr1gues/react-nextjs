@@ -2,7 +2,10 @@
 import React from 'react';
 import useSWR from 'swr';
 import { Product } from '../models/interfaces';
-import Card from '@/components/ProductCard/Card';
+import Header from '@/components/ProductHeader/ProductHeader';
+import FilterBar from '@/components/FilterBar/FilterBar';
+import ProductList from '@/components/ProductList/ProductList';
+import Cart from '@/components/Cart/Cart';
 
 export default function Produtos() {
 
@@ -16,17 +19,12 @@ export default function Produtos() {
 
 
   // Renderização dos produtos
-  return <>
-        {produtos.map((produto) => (
-            <Card
-                key={produto.id} 
-                id={produto.id}
-                title={produto.title}
-                price={produto.price}
-                description={produto.description}
-                image={produto.image}
-                rating={produto.rating}
-            />
-        ))}
-    </>
+  return (
+    <div>
+      <Header />
+      <FilterBar />
+      <ProductList produtos={produtos} />
+      <Cart />
+    </div>
+  );
 }

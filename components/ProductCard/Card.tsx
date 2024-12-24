@@ -16,7 +16,7 @@ export default function Card({
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.price}>{price.toFixed(2)}</p>
         <p className={styles.description}>{description}</p>
-        <p className={styles.description}>{rating.rate}</p>
+        <p className={styles.description}>{rating.rate} ⭐</p>
       </div>
     </div>
   );
