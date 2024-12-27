@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from './FilterBar.module.css'
 
 export default function FiltroCategorias() {
   const [categorias, setCategorias] = useState([]);
@@ -17,7 +18,7 @@ export default function FiltroCategorias() {
   }, []); // Executa apenas uma vez após a montagem do componente
 
   return (
-    <select id="filtrar">
+    <select className={styles.filtrar}>
       <option value="todas">Todas as categorias</option>
       {categorias.map((categoria, index) => (
         <option key={index} value={categoria}>

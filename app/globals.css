@@ -1,32 +1,141 @@
 body {
-  /* Box Model */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  background-color: #fff3de;
+}
 
-  /* Layout e Posicionamento */
+.title-cesto h2 {
+
+  margin-top: 60px;
+}
+
+#produtos {
+
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
   flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 30px;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.01);
+}
+
+.imagem {
+  display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Fundo e Estética */
-  background: url('https://cdn.pixabay.com/photo/2018/12/18/08/44/nature-3881939_1280.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
+  height: 220px;
 }
 
-main {
-  /* Reset e Box Model */
-  width: 320px;
-  height: 450px;
-  padding: 20px;
-  border-radius: 20px;
-  overflow-y: auto;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  /* Fundo */
-  background: whitesmoke;
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
+
+.product-card img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #3f3f3f;
+  margin-bottom: 15px;
+}
+
+p.descricao {
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.product-card .price {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+
+  background-color: #452b1a;
+  color: #ffffff;
+  border: 1px solid #452b1a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #ffffff;
+  color: #452b1a;
+}
+
+@keyframes slide-down {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#cesto {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #452b1a;
+  color: #ffffff;
+  padding: 10px;
+  margin: 0px;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.dados {
+
+  display: flex;
+  color: black;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.valor-final {
+
+  font-weight: bold;
+}
