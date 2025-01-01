@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Card.module.css';
 import { Product } from '@/app/models/interfaces';
 
-export default function Card({ title, price, description, image, rating }: Product) {
+export default function Card ({ id, title, price, description, image, rating, addToCart } : Product) {
   return (
     <div className={styles.card}>
       <h3>{title}</h3>
@@ -13,10 +13,14 @@ export default function Card({ title, price, description, image, rating }: Produ
         <p className={styles.price}>{price.toFixed(2)} €</p>
         <p className={styles.description}>{description}</p>
         <p className={styles.rating}>
-          Rating: {rating.rate} ⭐ ({rating.count} avaliações)
+          {rating.rate} ⭐ ({rating.count} avaliações)
         </p>
-        <button className={styles.addToCartButton}>+ Adicionar ao Cesto</button>
+        <button
+          onClick={() => addToCart({ id, title, price, image })}
+        >
+          + Adicionar ao Cesto
+        </button>
       </article>
     </div>
   );
-}
+};

@@ -2,14 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff3de;
+  background-color: #fff7e8;
 }
 
-.title-cesto h2 {
+#home {
 
-  margin-top: 60px;
+  background-color: #424242;
 }
-
+ 
 #produtos {
 
   display: flex;
@@ -17,86 +17,12 @@ body {
   justify-content: center;
 }
 
-.product-card {
+#tecnologias {
 
   display: flex;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  margin: 30px;
-  justify-content: space-between;
-  transition: transform 0.3s;
-}
-
-.product-card:hover {
-  transform: scale(1.01);
-}
-
-.imagem {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 220px;
-}
-
-.imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-
-.product-card img {
-  width: 250px;
-  border-radius: 5px;
-}
-
-.product-card h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.product-card p {
-  font-size: 1em;
-  color: #3f3f3f;
-  margin-bottom: 15px;
-}
-
-p.descricao {
-  background-color: rgb(245, 245, 245);
-  padding: 10px;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.product-card .price {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.product-card button {
-
-  background-color: #452b1a;
-  color: #ffffff;
-  border: 1px solid #452b1a;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s, color 0.3s;
-  margin-top: 10px;
-}
-
-.product-card button:hover {
-  background-color: #ffffff;
-  color: #452b1a;
+  background-color: #424242;
 }
 
 @keyframes slide-down {
@@ -108,22 +34,10 @@ p.descricao {
   }
 }
 
-#cesto {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #452b1a;
-  color: #ffffff;
-  padding: 10px;
-  margin: 0px;
-}
-
 footer {
   text-align: center;
   font-weight: bold;
 }
-
 
 .dados {
 
@@ -135,7 +49,3 @@ footer {
   flex-direction: column;
 }
 
-.valor-final {
-
-  font-weight: bold;
-}

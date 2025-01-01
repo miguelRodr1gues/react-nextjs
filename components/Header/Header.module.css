@@ -6,6 +6,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
@@ -15,6 +16,32 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
 
+.nav-link {
+  padding: 5px 15px; /* Tornar o botão mais confortável */
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #181818;
+  margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Suavização com múltiplas transições */
+  display: inline-block; /* Garante comportamento de botão */
+  text-align: center;
+  cursor: pointer; /* Sinaliza que é clicável */
+}
 
+.nav-link:hover {
+  color: #202020;
+  background-color: white;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
+}
 

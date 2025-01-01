@@ -5,7 +5,8 @@ import tecnologias from '@/app/data/tecnologias.json';
 
 export default function Tecnologias() {
 
-return <>
+return (
+  <section id="tecnologias">
     {tecnologias.map((tecnologia, index) => (
           <Card
             key={index}
@@ -15,5 +16,6 @@ return <>
             rating={tecnologia.rating}
           />
         ))}
-  </>
+        </section>
+)
 }

@@ -1,17 +1,16 @@
 import React from 'react';
-import useSWR from 'swr';
 import { Product } from '@/app/models/interfaces';
 import Card from '@/components/ProductCard/Card';
 
-export default function ProductList() {
-  
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-    const { data: produtos, error, isLoading } = useSWR<Product[], Error>('api/products', fetcher);
-  
-    // Verificar estados de erro e carregamento
-    if (error) return <div>Failed to load</div>;
-    if (isLoading) return <div>Loading...</div>;
-    if (!produtos) return <div>No data available</div>;
+interface ProductListProps {
+  produtos: Product[];
+  addToCart: (product: Product) => void;
+}
+
+export default function ProductList({ produtos, addToCart }: ProductListProps) {
+  if (produtos.length === 0) {
+    return <div>Nenhum produto encontrado.</div>;
+  }
 
   return (
     <section id="produtos">
@@ -21,9 +20,11 @@ export default function ProductList() {
           id={produto.id}
           title={produto.title}
           price={produto.price}
+          category={produto.category}
           description={produto.description}
           image={produto.image}
           rating={produto.rating}
+          addToCart={() => addToCart(produto)} // Passa o produto diretamente
         />
       ))}
     </section>

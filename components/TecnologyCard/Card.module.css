@@ -48,16 +48,3 @@
   color: #3f3f3f;
   margin-bottom: 15px;
 }
-
-p.descricao {
-  background-color: rgb(245, 245, 245);
-  padding: 10px;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.card .price {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}

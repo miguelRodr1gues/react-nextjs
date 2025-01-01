@@ -1,8 +1,17 @@
+"use client"
 import React, { useState, useEffect } from 'react';
-import styles from './FilterBar.module.css'
+import styles from './FilterBar.module.css';
 
-export default function FiltroCategorias() {
-  const [categorias, setCategorias] = useState([]);
+interface FiltroCategoriasProps {
+  categoryFilter: string;
+  setCategoryFilter: (value: string) => void;
+}
+
+export default function FiltroCategorias({
+  categoryFilter,
+  setCategoryFilter
+}: FiltroCategoriasProps) {
+  const [categorias, setCategorias] = useState<string[]>([]);
 
   useEffect(() => {
     // Fetch para obter as categorias
@@ -18,7 +27,11 @@ export default function FiltroCategorias() {
   }, []); // Executa apenas uma vez após a montagem do componente
 
   return (
-    <select className={styles.filtrar}>
+    <select 
+      className={styles.filtrar} 
+      value={categoryFilter}
+      onChange={(e) => setCategoryFilter(e.target.value)}
+    >
       <option value="todas">Todas as categorias</option>
       {categorias.map((categoria, index) => (
         <option key={index} value={categoria}>
