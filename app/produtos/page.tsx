@@ -90,7 +90,7 @@ export default function Produtos() {
 
   // Funcao da compra
   const buy = () => {
-    fetch("api/deisishop/buy", {
+    fetch("/api/deisishop/buy", {
       method: "POST",
       body: JSON.stringify({
         products: cart.map(product => product.id),
