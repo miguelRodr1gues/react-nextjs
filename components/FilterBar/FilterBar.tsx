@@ -22,7 +22,7 @@ export default function FilterBar({
   return (
     <div className={styles.filterBarContainer}>
       <section className={styles.titleProdutos}>
-        <h2>Selecione os seus Produtos</h2>
+        <h2>SELECIONE OS SEUS PRODUTOS</h2>
       </section>
 
       <section className={styles.barra}>

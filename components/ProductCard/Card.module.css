@@ -3,19 +3,21 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(253, 143, 47, 0.171);
   text-align: center;
   width: 340px;
-  margin: 25px;
+  margin: 30px;
   justify-content: space-between;
-  transition: transform 0.3s;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(255, 159, 34, 0.301); /* Aumenta o escurecimento */
 }
+
 
 .image {
   display: flex;
@@ -38,14 +40,14 @@
 }
 
 .price {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333333;
+  font-size: 1.2em; /* Ligeiramente maior para chamar atenção */
+  font-weight: bold; /* Destaca o preço */
+  color: #3f3f3f; /* Um tom de azul escuro elegante */
+  margin-bottom: 10px; /* Ajusta o espaçamento inferior */
 }
 
 .description {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 247, 240);
   padding: 10px;
   border-radius: 10px;
   text-align: left;
