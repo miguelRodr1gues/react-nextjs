@@ -76,10 +76,10 @@ export default function Produtos() {
   });
 
   const buy = () => {
-    fetch('/api/deisishop/buy', {
+    fetch('api/deisishop/buy', {
       method: 'POST',
       body: JSON.stringify({
-        products: cart.map(product => product.id),
+        products: cart.map((product) => product.id),
         name: '',
         student: isStudent,
         coupon: coupon,
@@ -88,21 +88,22 @@ export default function Produtos() {
         'Content-Type': 'application/json',
       },
     })
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error(response.statusText);
         }
         return response.json();
       })
-      .then(response => {
-        console.log(response);
+      .then((response) => {
+        const reference = response.reference;
         setCart([]);
         localStorage.setItem('cart', JSON.stringify([]));
-        setPurchaseMessage('Compra realizada com sucesso!');
+        setPurchaseMessage(
+          `Compra realizada com sucesso! Preço total: €${totalCost.toFixed(2)}. Referência: ${reference}`
+        );
       })
       .catch(() => {
         setPurchaseMessage('Erro ao realizar a compra.');
-        console.log('Erro ao comprar');
       });
   };
 
